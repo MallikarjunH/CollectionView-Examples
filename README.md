@@ -1,1 +1,7 @@
 CollectionViewsExample1
+
+
+![IMG_0139](https://user-images.githubusercontent.com/27955299/59425553-cac52d80-8df3-11e9-97a5-c8e571417413.jpg)
+![IMG_0140](https://user-images.githubusercontent.com/27955299/59425571-d7498600-8df3-11e9-90e5-a8f4a5fa80b2.jpg)
+![IMG_0141](https://user-images.githubusercontent.com/27955299/59425587-dfa1c100-8df3-11e9-9d78-0faed455670b.jpg)
+![IMG_0142](https://user-images.githubusercontent.com/27955299/59425605-e92b2900-8df3-11e9-9e68-29c91de04dd3.jpg)
