@@ -1,4 +1,3 @@
-CollectionViewsExample1
 
 #Example: 1
 ![IMG_0139](https://user-images.githubusercontent.com/27955299/59425553-cac52d80-8df3-11e9-97a5-c8e571417413.jpg)
