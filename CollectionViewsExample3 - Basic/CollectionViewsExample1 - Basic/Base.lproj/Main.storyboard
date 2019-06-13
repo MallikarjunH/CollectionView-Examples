@@ -20,47 +20,62 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xh2-Pg-ppX">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.95686274509803915" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vYw-bH-TGn">
-                                    <size key="itemSize" width="191" height="202"/>
+                                    <size key="itemSize" width="133" height="148"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="d8G-q0-1nN" customClass="SampleCollectionViewCell" customModule="CollectionViewsExample1___Basic" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="191" height="202"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="EEd-8x-ud9" customClass="SampleCollectionViewCell" customModule="CollectionViewsExample1___Basic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="148"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="191" height="202"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="133" height="148"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cell 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJx-OT-BAP">
-                                                    <rect key="frame" x="40" y="147" width="95" height="27"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1TM-cD-6or">
+                                                    <rect key="frame" x="0.0" y="0.0" width="133" height="148"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body Fat Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="HX8-BR-STc">
+                                                            <rect key="frame" x="31" y="100" width="75" height="35"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bmi_calculator" translatesAutoresizingMaskIntoConstraints="NO" id="4kX-id-n5n">
+                                                            <rect key="frame" x="27" y="26" width="84" height="64"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="64" id="86c-xQ-9HZ"/>
+                                                                <constraint firstAttribute="width" constant="84" id="mAg-3d-xxf"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="27" id="aBw-Fu-6Gb"/>
+                                                        <constraint firstItem="4kX-id-n5n" firstAttribute="leading" secondItem="1TM-cD-6or" secondAttribute="leading" constant="27" id="0st-wn-4g0"/>
+                                                        <constraint firstItem="HX8-BR-STc" firstAttribute="top" secondItem="4kX-id-n5n" secondAttribute="bottom" constant="10" id="G3H-Qh-uTa"/>
+                                                        <constraint firstAttribute="trailing" secondItem="HX8-BR-STc" secondAttribute="trailing" constant="27" id="Mch-XK-7hf"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4kX-id-n5n" secondAttribute="trailing" constant="22" id="eQD-NR-iq1"/>
+                                                        <constraint firstAttribute="bottom" secondItem="HX8-BR-STc" secondAttribute="bottom" constant="13" id="sCI-Sl-oIG"/>
+                                                        <constraint firstItem="HX8-BR-STc" firstAttribute="leading" secondItem="1TM-cD-6or" secondAttribute="leading" constant="31" id="umJ-oB-TyF"/>
+                                                        <constraint firstItem="4kX-id-n5n" firstAttribute="top" secondItem="1TM-cD-6or" secondAttribute="top" constant="26" id="w0K-ZZ-6rn"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="userprofilepic.png" translatesAutoresizingMaskIntoConstraints="NO" id="P7M-kE-7IW">
-                                                    <rect key="frame" x="42" y="34" width="93" height="92"/>
-                                                </imageView>
+                                                </view>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.79742804381787014" green="0.79794345999958904" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="P7M-kE-7IW" firstAttribute="top" secondItem="d8G-q0-1nN" secondAttribute="topMargin" constant="26" id="8wE-Yl-zBz"/>
-                                            <constraint firstItem="P7M-kE-7IW" firstAttribute="leading" secondItem="d8G-q0-1nN" secondAttribute="leadingMargin" constant="34" id="L1n-7d-pLi"/>
-                                            <constraint firstItem="P7M-kE-7IW" firstAttribute="trailing" secondItem="fJx-OT-BAP" secondAttribute="trailing" id="YDg-bU-Ov2"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="P7M-kE-7IW" secondAttribute="trailing" constant="48" id="bdd-AD-pFz"/>
-                                            <constraint firstItem="fJx-OT-BAP" firstAttribute="leading" secondItem="d8G-q0-1nN" secondAttribute="leadingMargin" constant="32" id="nqN-gb-DZb"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="fJx-OT-BAP" secondAttribute="bottom" constant="20" id="t9H-2f-1ck"/>
-                                            <constraint firstItem="fJx-OT-BAP" firstAttribute="top" secondItem="P7M-kE-7IW" secondAttribute="bottom" constant="21" id="vtN-Ry-Fkx"/>
+                                            <constraint firstAttribute="bottom" secondItem="1TM-cD-6or" secondAttribute="bottom" id="GhM-wO-Dqg"/>
+                                            <constraint firstItem="1TM-cD-6or" firstAttribute="leading" secondItem="EEd-8x-ud9" secondAttribute="leading" id="Qdu-vh-TO9"/>
+                                            <constraint firstItem="1TM-cD-6or" firstAttribute="top" secondItem="EEd-8x-ud9" secondAttribute="top" id="SbA-fz-EOH"/>
+                                            <constraint firstAttribute="trailing" secondItem="1TM-cD-6or" secondAttribute="trailing" id="VEA-sL-NSr"/>
                                         </constraints>
+                                        <size key="customSize" width="133" height="148"/>
                                         <connections>
-                                            <outlet property="sampleLabel" destination="fJx-OT-BAP" id="tYK-1d-yTJ"/>
+                                            <outlet property="cellBGView" destination="1TM-cD-6or" id="z9p-Gt-Sbc"/>
+                                            <outlet property="cellTitleLabel" destination="HX8-BR-STc" id="Rwk-aU-Ucn"/>
+                                            <outlet property="imageOutlet" destination="4kX-id-n5n" id="vXm-EA-ynC"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -105,6 +120,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="userprofilepic.png" width="225" height="225"/>
+        <image name="bmi_calculator" width="60" height="63"/>
     </resources>
 </document>

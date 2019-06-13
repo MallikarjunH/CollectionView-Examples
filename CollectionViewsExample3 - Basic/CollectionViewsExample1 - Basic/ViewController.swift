@@ -12,7 +12,8 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     
     
 
-    let itemsArray = ["Cell 1", "Cell 2","Cell 3","Cell 4","Cell 5","Cell 6","Cell 7","Cell 8","Cell 8","Cell 10","Cell 11","Cell 12"]
+    let itemsArray = ["Body Fat Calculator", "Activity Tracket","Calorie Counter","Height Predictor","Health Logs","Baby Bump Tracker","Symptom Checker","Pull Reminder","Menstruation Calender"]
+    let imageArray = ["bmi_calculator","activity_tracker","calorie_calculator","baby_height_predictor","health_log","babay_bump_predictor","symptom_checker","pill_reminder", "pms_calculator"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,8 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SampleCollectionViewCell
         
-        cell.sampleLabel.text = itemsArray[indexPath.item]
+        cell.cellTitleLabel.text = itemsArray[indexPath.item]
+        cell.imageOutlet.image = UIImage(named: imageArray[indexPath.row])
         
         return cell
     }
@@ -47,7 +49,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
             let screenRect = UIScreen.main.bounds
             let screenWidth = screenRect.size.width - 30
             
-            cellSize = CGSize(width: screenWidth / 2.0, height: 185)
+            cellSize = CGSize(width: screenWidth / 2.0, height: 180)
     
         return cellSize
         
@@ -55,7 +57,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
-        return UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
 
 

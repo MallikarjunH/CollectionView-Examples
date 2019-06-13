@@ -10,8 +10,15 @@ import UIKit
 
 class SampleCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var sampleLabel: UILabel!
+    @IBOutlet weak var imageOutlet: UIImageView!
     
+    @IBOutlet weak var cellTitleLabel: UILabel!
+
+    @IBOutlet weak var cellBGView: UIView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        cellBGView.layer.cornerRadius = 5.0
+    }
     
 }
