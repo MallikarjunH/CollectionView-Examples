@@ -12,7 +12,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     
     
 
-    let itemsArray = ["Body Fat Calculator", "Activity Tracket","Calorie Counter","Height Predictor","Health Logs","Baby Bump Tracker","Symptom Checker","Pull Reminder","Menstruation Calender"]
+    let itemsArray = ["Body Fat Calculator", "Activity Tracket","Calorie Counter","Height Predictor","Health Logs","Baby Bump Tracker","Symptom Checker","Pill Reminder","Menstruation Calender"]
     let imageArray = ["bmi_calculator","activity_tracker","calorie_calculator","baby_height_predictor","health_log","babay_bump_predictor","symptom_checker","pill_reminder", "pms_calculator"]
     
     override func viewDidLoad() {
