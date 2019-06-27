@@ -1,10 +1,4 @@
 
-Health Tools - Main Menu List UI Design
-
-![Screenshot 2019-06-13 at 5 15 04 PM](https://user-images.githubusercontent.com/27955299/59430094-f863a400-8dfe-11e9-9e33-54e4a2d37a2f.png)
-
-
-
 #Example: 1
 
 ![IMG_0139](https://user-images.githubusercontent.com/27955299/59425553-cac52d80-8df3-11e9-97a5-c8e571417413.jpg)
