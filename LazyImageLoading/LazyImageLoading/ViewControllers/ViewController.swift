@@ -46,11 +46,39 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         
+        var cellSize: CGSize
+        
+        let screenRect = UIScreen.main.bounds
+        let screenWidth = screenRect.size.width - 30
+        
+        cellSize = CGSize(width: screenWidth / 2.0, height: 180)
+        
+        return cellSize
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets{
         
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+    }
+    
+     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+       
+        let flickrPhoto = imageURL[indexPath.item]
+        (cell as! ImageCollectionViewCell).imageView.image = #imageLiteral(resourceName: "placeholder")
+        ImageDownloadManager.shared.downloadImage(flickrPhoto, indexPath: indexPath) { (image, url, indexPathh, error) in
+            if let indexPathNew = indexPathh, indexPathNew == indexPath {
+                DispatchQueue.main.async {
+                    (cell as! ImageCollectionViewCell).imageView.image = image
+                }
+            }
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        ImageDownloadManager.shared.slowDownImageDownloadTaskfor(imageURL[indexPath.item])
     }
 }
 

@@ -46,6 +46,9 @@
                                             <constraint firstAttribute="trailing" secondItem="aAB-TS-bvU" secondAttribute="trailing" constant="10" id="mji-ud-pvI"/>
                                             <constraint firstItem="aAB-TS-bvU" firstAttribute="top" secondItem="qPd-d8-zb8" secondAttribute="top" constant="10" id="wWI-H6-UDK"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="aAB-TS-bvU" id="6JU-Eo-Hsa"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
